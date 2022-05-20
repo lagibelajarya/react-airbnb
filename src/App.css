@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  background-color: #23252c;
+}
+.App {
+  max-width: 550px;
+  background-color: #fff;
+  margin: 100px 0;
+  box-shadow: 7px 12px rgba(255, 255, 255, 0.3);
+}
+/* <<<<<<<<<<<<<<<<<<<<<<< NAVBAR >>>>>>>>>>>>>>>>>>>> */
+.navbar {
+  background-color: #fff;
+  height: 70px;
+  box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  align-items: center;
+}
+
+.navbar img {
+  margin-left: 30px;
+  max-width: 100px;
+}
+/* <<<<<<<<<<<<<<<<<<<<<<<  HERO >>>>>>>>>>>>>>>>>>>> */
+.Hero {
+  padding: 27px 36px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Hero__img {
+  margin-bottom: 32px;
+}
+.Hero__title {
+  font-size: 36px;
+  font-weight: 600;
+  align-self: flex-start;
+}
+.Hero__text {
+  align-self: flex-start;
+  font-size: 16px;
+  font-weight: 300;
+
+  width: 70%;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<< CARD >>>>>>>>>>>>>>>>>>>> */
+.CardContainer {
+  display: flex;
+  overflow-x: auto;
+}
+.Card {
+  padding: 27px 36px;
+}
+
+.Card__box {
+}
+.Card__box-img {
+  height: 353px;
+  border-radius: 10px;
+}
+.Card__box-rating {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.Card__box-rating span {
+}
+.Card__box-rating span:nth-child(3),
+.Card__box-rating span:nth-child(4) {
+  font-weight: 300;
+  color: #918e9b;
+}
+
+.Card__box-rating .icon-star {
+  color: #fe395c;
+}
+.Card__box-info {
+}
+.Card__box-info p {
+  font-weight: 300;
+  font-size: 12px;
+}
+.Card__box-info p:nth-child(2) span {
+  font-weight: 600;
+}
